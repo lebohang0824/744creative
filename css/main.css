@@ -30,6 +30,31 @@ a {
   text-decoration: none;
 }
 
+.navbar-container .navbar {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  padding: 20px 0;
+  grid-template-columns: 1fr 2fr;
+}
+.navbar-container .navbar ul {
+  margin: 0;
+  padding: 20px 0;
+}
+.navbar-container .navbar ul li {
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+}
+.navbar-container .navbar ul li .active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.navbar-container .navbar .logo img {
+  width: 150px;
+  height: auto;
+}
+
 .container {
   top: 0;
   left: 0;
