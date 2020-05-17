@@ -14,17 +14,88 @@
 
     .info {
         color: #000;
-        font-weight: 200;
+        font-weight: 300;
         padding: 70px 60px;
         @include font-size(20);
+        @include grid(1fr 1fr, auto, 5px);
         .contact-details {
-            
+            h2 {
+                color: #333;
+                margin-left: 50px;
+                padding-bottom: 30px;
+                @include font-size(25);
+                text-transform: uppercase;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style: none;
+                    position: relative;
+                    margin-bottom: 20px;
+                    img {
+                        width: 30px;
+                        height: auto;
+                        margin-right: 20px;
+                    }
+                    span {
+                        position: absolute;
+                    }
+                }
+            }
+        }
+        .form {
+            position: relative;
+            form {
+                width: 75%;
+                padding: 50px;
+                border-radius: 8px;
+                position: absolute;
+                box-sizing: border-box;
+                background-color: #FFF;
+                h4 {
+                    color: #333;
+                    margin: 5px 0;
+                    font-weight: 300;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                input, textarea {
+                    width: 100%;
+                    border: none;
+                    padding: 10px;
+                    @include poppin;
+                    box-sizing: border-box;
+                    @include font-size(16);
+                    outline: auto 1px $primary;
+                }
+                input {
+                    margin-bottom: 20px;
+                }
+                textarea {
+                    margin-bottom: 10px;
+                }
+                button {
+                    width: 100%;
+                    border: none;
+                    color: #FFF;
+                    display: block;
+                    padding: 10px 0;
+                    border-radius: 2px;
+                    text-transform: uppercase;
+                    background-color: $primary;
+                }
+            }
         }
     }
 }
 .footer {
     width: 70%;
     margin: auto;
-    min-height: 100px;
+    min-height: 150px;
     background-color: $primary;
+    p {
+        color: #FFF;
+        padding: 50px;
+    }
 }

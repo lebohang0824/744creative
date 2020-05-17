@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700;900&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -84,16 +84,94 @@ a {
 }
 .contact-us .info {
   color: #000;
-  font-weight: 200;
+  font-weight: 300;
   padding: 70px 60px;
   font-size: 20;
   font-size: 1.25rem;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
 }
+.contact-us .info .contact-details h2 {
+  color: #333;
+  margin-left: 50px;
+  padding-bottom: 30px;
+  font-size: 25;
+  font-size: 1.5625rem;
+  text-transform: uppercase;
+}
+.contact-us .info .contact-details ul {
+  margin: 0;
+  padding: 0;
+}
+.contact-us .info .contact-details ul li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 20px;
+}
+.contact-us .info .contact-details ul li img {
+  width: 30px;
+  height: auto;
+  margin-right: 20px;
+}
+.contact-us .info .contact-details ul li span {
+  position: absolute;
+}
+.contact-us .info .form {
+  position: relative;
+}
+.contact-us .info .form form {
+  width: 75%;
+  padding: 50px;
+  border-radius: 8px;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #FFF;
+}
+.contact-us .info .form form h4 {
+  color: #333;
+  margin: 5px 0;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contact-us .info .form form input, .contact-us .info .form form textarea {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  font-size: 16;
+  font-size: 1rem;
+  outline: auto 1px #2E3192;
+}
+.contact-us .info .form form input {
+  margin-bottom: 20px;
+}
+.contact-us .info .form form textarea {
+  margin-bottom: 10px;
+}
+.contact-us .info .form form button {
+  width: 100%;
+  border: none;
+  color: #FFF;
+  display: block;
+  padding: 10px 0;
+  border-radius: 2px;
+  text-transform: uppercase;
+  background-color: #2E3192;
+}
+
 .footer {
   width: 70%;
   margin: auto;
-  min-height: 100px;
+  min-height: 150px;
   background-color: #2E3192;
+}
+.footer p {
+  color: #FFF;
+  padding: 50px;
 }
 
 .navbar-container .navbar {
