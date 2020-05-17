@@ -47,6 +47,28 @@ a {
   padding-top: 100px;
 }
 
+.about {
+  width: 70%;
+  margin: auto;
+  margin-top: 70px;
+  position: relative;
+  border-radius: 40px;
+  background-color: #EAEAEA;
+}
+.about h1 {
+  top: -75px;
+  left: 60px;
+  color: #2E3192;
+  position: absolute;
+}
+.about .info {
+  color: #000;
+  font-weight: 200;
+  padding: 70px 60px;
+  font-size: 20;
+  font-size: 1.25rem;
+}
+
 .navbar-container .navbar {
   width: 80%;
   margin: auto;
