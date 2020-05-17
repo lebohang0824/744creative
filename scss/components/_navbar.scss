@@ -3,19 +3,23 @@
         width: 80%;
         margin: auto;
         display: grid;
-        padding: 20px 0;
+        padding: 30px 0;
         grid-template-columns: 1fr 2fr;
         ul {
             margin: 0;
-            padding: 20px 0;
+            padding: 15px 0;
             li {
                 display: inline-block;
                 text-align: center;
-                width: 80px;
+                width: 110px;
                 .active{
                     font-weight: bold;
-                    text-decoration: underline;
-                }                
+                    // text-decoration: underline;
+                    border-bottom: solid 1px $primary;
+                }    
+                a {
+                    color: #333;
+                }            
             }
         }
         .logo {

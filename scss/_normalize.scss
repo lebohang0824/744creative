@@ -2,9 +2,12 @@ body {
     margin: 0;
     padding: 0;
     background: url(../imgs/bg.jpeg) no-repeat;
-    background-position-y: -50px;
+    background-position-y: -120px;
     background-attachment: fixed;
     background-size: cover;
+    @include font-size(18);
+    line-height: 1.5px;
+    @include poppin;
 }
 
 h1,
