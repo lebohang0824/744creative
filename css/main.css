@@ -96,7 +96,6 @@ a {
 .contact-us .info .contact-details h2 {
   color: #333;
   margin-left: 50px;
-  padding-bottom: 30px;
   font-size: 25;
   font-size: 1.5625rem;
   text-transform: uppercase;
@@ -106,9 +105,9 @@ a {
   padding: 0;
 }
 .contact-us .info .contact-details ul li {
+  margin-top: 30px;
   list-style: none;
   position: relative;
-  margin-bottom: 20px;
 }
 .contact-us .info .contact-details ul li img {
   width: 30px;
@@ -119,6 +118,7 @@ a {
   position: absolute;
 }
 .contact-us .info .form {
+  z-index: 1;
   position: relative;
 }
 .contact-us .info .form form {
@@ -162,6 +162,20 @@ a {
   text-transform: uppercase;
   background-color: #2E3192;
 }
+.contact-us .info .form form .form-socials {
+  left: 40%;
+  bottom: -50px;
+  position: absolute;
+}
+.contact-us .info .form form .form-socials a {
+  width: 30px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.contact-us .info .form form .form-socials a img {
+  width: 15px;
+  height: 100%;
+}
 
 .footer {
   width: 70%;
@@ -169,9 +183,14 @@ a {
   min-height: 150px;
   background-color: #2E3192;
 }
-.footer p {
+.footer .address {
   color: #FFF;
   padding: 50px;
+}
+.footer .address p {
+  line-height: 16px;
+  font-size: 15;
+  font-size: 0.9375rem;
 }
 
 .navbar-container .navbar {

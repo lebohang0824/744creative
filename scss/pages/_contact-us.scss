@@ -22,7 +22,6 @@
             h2 {
                 color: #333;
                 margin-left: 50px;
-                padding-bottom: 30px;
                 @include font-size(25);
                 text-transform: uppercase;
             }
@@ -30,9 +29,9 @@
                 margin: 0;
                 padding: 0;
                 li {
+                    margin-top: 30px;
                     list-style: none;
                     position: relative;
-                    margin-bottom: 20px;
                     img {
                         width: 30px;
                         height: auto;
@@ -45,6 +44,7 @@
             }
         }
         .form {
+            z-index: 1;
             position: relative;
             form {
                 width: 75%;
@@ -85,6 +85,20 @@
                     text-transform: uppercase;
                     background-color: $primary;
                 }
+                .form-socials {
+                    left: 40%;
+                    bottom: -50px;
+                    position: absolute;   
+                    a {
+                        width: 30px;
+                        display: inline-block;
+                        box-sizing: border-box;
+                        img {
+                            width: 15px;
+                            height: 100%;
+                        }
+                    }         
+                }
             }
         }
     }
@@ -94,8 +108,12 @@
     margin: auto;
     min-height: 150px;
     background-color: $primary;
-    p {
+    .address {
         color: #FFF;
         padding: 50px;
+        p {
+            line-height: 16px;
+            @include font-size(15);
+        }
     }
 }
