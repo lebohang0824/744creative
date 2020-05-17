@@ -5,8 +5,8 @@ body {
     @include poppin;
     @include font-size(18);
     background-attachment: fixed;
-    background-position-y: -120px;
     background: url(../imgs/bg.jpeg) no-repeat;
+    background-position-y: -100px;
     background-size: cover;
 }
 

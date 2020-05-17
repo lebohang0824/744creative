@@ -7,8 +7,8 @@ body {
   font-size: 18;
   font-size: 1.125rem;
   background-attachment: fixed;
-  background-position-y: -120px;
   background: url(../imgs/bg.jpeg) no-repeat;
+  background-position-y: -100px;
   background-size: cover;
 }
 
@@ -36,7 +36,7 @@ a {
 }
 
 .hero {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 .hero h1 {
   text-align: center;
@@ -116,7 +116,23 @@ a {
 
 .btn-secondary {
   color: #2E3192;
-  border: solid 2px #FFF;
+  border: solid 2px rgba(255, 255, 255, 0.8);
+}
+
+.socials {
+  top: 50%;
+  right: 50px;
+  width: 25px;
+  position: fixed;
+}
+.socials a {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.socials a img {
+  width: 25px;
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

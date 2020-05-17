@@ -20,5 +20,5 @@
 .btn-secondary {
     @extend .button;
     color: $primary;
-    border: solid 2px #FFF;
+    border: solid 2px transparentize(#FFF, .2);
 }
