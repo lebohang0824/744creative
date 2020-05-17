@@ -255,14 +255,14 @@ a {
 }
 
 .btn-primary {
+  color: #FFF;
   background-color: #2E3192;
   border: solid 2px #2E3192;
-  color: rgba(255, 255, 255, 0.8);
 }
 
 .btn-secondary {
   color: #2E3192;
-  border: solid 2px rgba(255, 255, 255, 0.8);
+  border: solid 2px #FFF;
 }
 
 .socials {

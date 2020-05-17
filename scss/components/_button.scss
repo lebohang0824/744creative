@@ -11,14 +11,14 @@
 }
 
 .btn-primary {
+    color: #FFF;
     @extend .button;
     background-color: $primary;
     border: solid 2px $primary;
-    color: transparentize(#FFF, .2);
 }
 
 .btn-secondary {
     @extend .button;
     color: $primary;
-    border: solid 2px transparentize(#FFF, .2);
+    border: solid 2px #FFF;
 }
