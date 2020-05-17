@@ -1,0 +1,27 @@
+.contact-us {
+    width: 70%;
+    margin: auto;
+    margin-top: 70px;
+    position: relative;
+    background-color: #EAEAEA;
+
+    h1 {
+        top: -75px;
+        left: 60px;
+        color: $primary;
+        position: absolute;
+    }
+
+    .info {
+        color: #000;
+        font-weight: 200;
+        padding: 70px 60px;
+        @include font-size(20);
+    }
+}
+.footer {
+    width: 70%;
+    margin: auto;
+    min-height: 100px;
+    background-color: $primary;
+}
