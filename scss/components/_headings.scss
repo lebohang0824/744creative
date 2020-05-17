@@ -1,0 +1,8 @@
+.heading {
+    @include font-size(110);
+}
+
+.sub-heading {
+    font-weight: 200;
+    @include font-size(55);
+}
