@@ -4,17 +4,19 @@ body {
     color: #333;
     @include poppin;
     @include font-size(18);
-    background-attachment: fixed;
     background: url(../imgs/bg.jpeg) no-repeat;
-    background-position-y: -100px;
+    background-attachment: fixed;
     background-size: cover;
+    @include lg-screen {
+        background-position-y: -100px;
+    }
 }
 
 h1,
 h2,
 h3,
 h4,
-h5,
+h5, 
 h6 {
     padding: 0;
     margin: 0;

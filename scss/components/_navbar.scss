@@ -7,7 +7,11 @@
         grid-template-columns: 1fr 2fr;
         ul {
             margin: 0;
+            display: none;
             padding: 10px 0;
+            @include md-screen {
+                display: block;
+            }
             li {
                 display: inline-block;
                 line-height: 1.5px;

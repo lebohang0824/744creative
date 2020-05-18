@@ -1,12 +1,18 @@
 .socials {
-    top: 50%;
-    right: 50px;
-    width: 25px;
-    position: fixed;
+    margin-top: 50px;
+    text-align: center;
+    @include md-screen {
+        top: 50%;
+        right: 50px;
+        position: fixed;
+    }
     a {
-        display: block;
-        text-align: center;
+        margin-right: 10px;
         margin-bottom: 20px;
+        @include md-screen {
+            display: block;  
+            margin-right: 0;          
+        }
         img {
             width: 25px;
             height: 100%;

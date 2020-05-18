@@ -1,13 +1,18 @@
 .button {
-    width: 170px;
-    margin: 0 10px;
+    width: 100px;
+    margin: 0 5px;
     padding: 10px 0;
     font-weight: 700;
     text-align: center;
     border-radius: 50px;
     display: inline-block;
-    @include font-size(20);
+    @include font-size(15);
     text-transform: uppercase;
+    @include sm-screen {
+        @include font-size(20);
+        margin: 0 10px;
+        width: 170px;        
+    }
 }
 
 .btn-primary {

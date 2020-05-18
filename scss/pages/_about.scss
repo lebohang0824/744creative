@@ -7,10 +7,13 @@
     background-color: #EAEAEA;
 
     h1 {
-        top: -75px;
+        top: -40px;
         left: 60px;
         color: $primary;
         position: absolute;
+        @include sm-screen {
+            top: -75px;
+        }
     }
 
     .info {

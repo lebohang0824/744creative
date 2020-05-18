@@ -1,5 +1,8 @@
 .hero {
-    padding-top: 150px;
+    padding-top: 30%;
+    @include sm-screen {
+        padding-top: 10%;        
+    }
     h1 {
         text-align: center;
     }
@@ -7,5 +10,5 @@
 
 .cta {
     text-align: center;
-    padding-top: 100px;  
+    padding-top: 5%;  
 }
