@@ -47,6 +47,9 @@
                     list-style: none;
                     position: relative;
                     @include font-size(15);
+                    @include md-screen {
+                        @include font-size(18);
+                    }
                     img {
                         width: 20px;
                         height: auto;

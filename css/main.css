@@ -154,6 +154,12 @@ a {
   font-size: 15;
   font-size: 0.9375rem;
 }
+@media screen and (min-width: 768px) {
+  .contact-us .info .contact-details ul li {
+    font-size: 18;
+    font-size: 1.125rem;
+  }
+}
 .contact-us .info .contact-details ul li img {
   width: 20px;
   height: auto;
