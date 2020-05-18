@@ -57,28 +57,34 @@ a {
 }
 
 .about {
-  width: 70%;
+  width: 90%;
   margin: auto;
   margin-top: 70px;
   position: relative;
   border-radius: 40px;
   background-color: #EAEAEA;
 }
+@media screen and (min-width: 768px) {
+  .about {
+    width: 70%;
+  }
+}
 .about h1 {
   top: -40px;
-  left: 60px;
+  left: 20px;
   color: #2E3192;
   position: absolute;
 }
 @media screen and (min-width: 480px) {
   .about h1 {
     top: -75px;
+    left: 60px;
   }
 }
 .about .info {
   color: #000;
   font-weight: 300;
-  padding: 70px 60px;
+  padding: 70px 20px;
   font-size: 20;
   font-size: 1.25rem;
 }
@@ -246,7 +252,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -268,7 +274,7 @@ a {
 }
 
 .sub-heading {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 30;
   font-size: 1.875rem;
 }

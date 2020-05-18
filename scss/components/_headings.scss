@@ -9,7 +9,7 @@
 }
 
 .sub-heading {
-    font-weight: 100;
+    font-weight: 300;
     @include font-size(30);
     @include sm-screen {
         @include font-size(40);
