@@ -61,7 +61,6 @@ a {
   margin: auto;
   margin-top: 70px;
   position: relative;
-  border-radius: 40px;
   background-color: #EAEAEA;
 }
 @media screen and (min-width: 768px) {
