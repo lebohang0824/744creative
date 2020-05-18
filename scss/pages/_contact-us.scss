@@ -1,29 +1,43 @@
 .contact-us {
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-top: 70px;
     position: relative;
     background-color: #EAEAEA;
+    @include md-screen {
+        width: 70%;
+    }
 
     h1 {
-        top: -75px;
-        left: 60px;
+        top: -40px;
+        left: 20px;
         color: $primary;
         position: absolute;
+        @include sm-screen {
+            top: -75px;
+            left: 60px;
+        }
     }
 
     .info {
         color: #000;
         font-weight: 300;
-        padding: 70px 60px;
+        padding: 70px 30px;
         @include font-size(20);
-        @include grid(1fr 1fr, auto, 5px);
+        @include lg-screen {
+            padding: 70px 60px;
+            @include grid(1fr 1fr, auto, 5px);
+        }
         .contact-details {
             h2 {
                 color: #333;
-                margin-left: 50px;
-                @include font-size(25);
+                margin-left: 0px;
+                @include font-size(20);
                 text-transform: uppercase;
+                @include md-screen {
+                    margin-left: 50px; 
+                    @include font-size(25);                   
+                }
             }
             ul {
                 margin: 0;
@@ -32,10 +46,15 @@
                     margin-top: 30px;
                     list-style: none;
                     position: relative;
+                    @include font-size(15);
                     img {
-                        width: 30px;
+                        width: 20px;
                         height: auto;
-                        margin-right: 20px;
+                        margin-right: 5px;
+                        @include sm-screen {
+                            width: 30px;
+                            margin-right: 20px;
+                        }
                     }
                     span {
                         position: absolute;
@@ -45,14 +64,21 @@
         }
         .form {
             z-index: 1;
+            padding-top: 20px;
             position: relative;
+            @include lg-screen {
+                padding-top: 0px;                
+            }
             form {
-                width: 75%;
-                padding: 50px;
+                padding: 15px;
                 border-radius: 8px;
-                position: absolute;
                 box-sizing: border-box;
                 background-color: #FFF;
+                @include lg-screen {
+                    width: 75%;
+                    padding: 50px;
+                    position: absolute;
+                }
                 h4 {
                     color: #333;
                     margin: 5px 0;
@@ -104,10 +130,13 @@
     }
 }
 .footer {
-    width: 70%;
+    width: 90%;
     margin: auto;
     min-height: 150px;
     background-color: $primary;
+    @include md-screen {
+        width: 70%;        
+    }
     .address {
         color: #FFF;
         padding: 50px;

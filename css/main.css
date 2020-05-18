@@ -90,35 +90,58 @@ a {
 }
 
 .contact-us {
-  width: 70%;
+  width: 90%;
   margin: auto;
   margin-top: 70px;
   position: relative;
   background-color: #EAEAEA;
 }
+@media screen and (min-width: 768px) {
+  .contact-us {
+    width: 70%;
+  }
+}
 .contact-us h1 {
-  top: -75px;
-  left: 60px;
+  top: -40px;
+  left: 20px;
   color: #2E3192;
   position: absolute;
+}
+@media screen and (min-width: 480px) {
+  .contact-us h1 {
+    top: -75px;
+    left: 60px;
+  }
 }
 .contact-us .info {
   color: #000;
   font-weight: 300;
-  padding: 70px 60px;
+  padding: 70px 30px;
   font-size: 20;
   font-size: 1.25rem;
-  display: grid;
-  grid-gap: 5px;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 992px) {
+  .contact-us .info {
+    padding: 70px 60px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .contact-us .info .contact-details h2 {
   color: #333;
-  margin-left: 50px;
-  font-size: 25;
-  font-size: 1.5625rem;
+  margin-left: 0px;
+  font-size: 20;
+  font-size: 1.25rem;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .contact-us .info .contact-details h2 {
+    margin-left: 50px;
+    font-size: 25;
+    font-size: 1.5625rem;
+  }
 }
 .contact-us .info .contact-details ul {
   margin: 0;
@@ -128,26 +151,45 @@ a {
   margin-top: 30px;
   list-style: none;
   position: relative;
+  font-size: 15;
+  font-size: 0.9375rem;
 }
 .contact-us .info .contact-details ul li img {
-  width: 30px;
+  width: 20px;
   height: auto;
-  margin-right: 20px;
+  margin-right: 5px;
+}
+@media screen and (min-width: 480px) {
+  .contact-us .info .contact-details ul li img {
+    width: 30px;
+    margin-right: 20px;
+  }
 }
 .contact-us .info .contact-details ul li span {
   position: absolute;
 }
 .contact-us .info .form {
   z-index: 1;
+  padding-top: 20px;
   position: relative;
 }
+@media screen and (min-width: 992px) {
+  .contact-us .info .form {
+    padding-top: 0px;
+  }
+}
 .contact-us .info .form form {
-  width: 75%;
-  padding: 50px;
+  padding: 15px;
   border-radius: 8px;
-  position: absolute;
   box-sizing: border-box;
   background-color: #FFF;
+}
+@media screen and (min-width: 992px) {
+  .contact-us .info .form form {
+    width: 75%;
+    padding: 50px;
+    position: absolute;
+  }
 }
 .contact-us .info .form form h4 {
   color: #333;
@@ -198,10 +240,15 @@ a {
 }
 
 .footer {
-  width: 70%;
+  width: 90%;
   margin: auto;
   min-height: 150px;
   background-color: #2E3192;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 70%;
+  }
 }
 .footer .address {
   color: #FFF;
