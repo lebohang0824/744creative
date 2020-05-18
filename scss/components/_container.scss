@@ -3,5 +3,9 @@
     left: 0;
     width: 100%;
     min-height: 100vh;
+    padding-bottom: 20px;
     background-color: transparentize(#FFF, .5);
+    @include lg-screen {
+        padding-bottom: 0px;
+    }
 }
