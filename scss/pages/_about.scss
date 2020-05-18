@@ -25,5 +25,8 @@
         font-weight: 300;
         padding: 70px 20px;
         @include font-size(20);
+        @include sm-screen {
+            padding: 70px 60px;            
+        }
     }
 }

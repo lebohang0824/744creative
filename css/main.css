@@ -88,6 +88,11 @@ a {
   font-size: 20;
   font-size: 1.25rem;
 }
+@media screen and (min-width: 480px) {
+  .about .info {
+    padding: 70px 60px;
+  }
+}
 
 .contact-us {
   width: 90%;
