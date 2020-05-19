@@ -78,6 +78,7 @@ a {
 }
 .jumbo .projects h1 {
   clear: both;
+  color: #2E3192;
   font-weight: bold;
   padding-top: 30px;
   display: inline-block;
@@ -87,7 +88,27 @@ a {
   border-top: solid 1px #2E3192;
 }
 .jumbo .projects .work {
+  width: 90%;
+  margin: auto;
   padding-top: 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 768px) {
+  .jumbo .projects .work {
+    width: 70%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.jumbo .projects .work img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
 }
 
 .about {
