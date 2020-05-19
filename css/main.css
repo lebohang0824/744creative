@@ -446,4 +446,23 @@ a {
   height: 100%;
 }
 
+.copyright {
+  padding: 15px 20px;
+  box-sizing: border-box;
+  background-color: #F9F9F9;
+  border-top: solid 1px #F0F0F0;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+}
+.copyright p {
+  color: #333;
+  font-size: 15;
+  font-size: 0.9375rem;
+}
+.copyright .right {
+  text-align: right;
+}
+
 /*# sourceMappingURL=main.css.map */

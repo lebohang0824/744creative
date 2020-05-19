@@ -1,0 +1,14 @@
+.copyright {
+    padding: 15px 20px;
+    box-sizing: border-box;
+    background-color: #F9F9F9;
+    border-top: solid 1px #F0F0F0;
+    @include grid(1fr 1fr, auto, 0px);
+    p {
+        color: #333;
+        @include font-size(15);
+    }
+    .right {
+        text-align: right;
+    }
+}
