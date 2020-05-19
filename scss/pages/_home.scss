@@ -12,3 +12,34 @@
     text-align: center;
     padding-top: 5%;  
 }
+
+.jumbo {
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #FFF;
+    @include md-screen {
+        padding: 100px;
+    }
+    h1 {
+        color: #333;
+        font-weight: 300;
+        text-align: center;
+        @include font-size(25);
+    }
+    .projects {
+        padding-top: 30px;
+        text-align: center;
+        h1 {
+            clear: both;
+            font-weight: bold;
+            padding-top: 30px;
+            display: inline-block;
+            @include font-size(30);
+            text-transform: uppercase;
+            border-top: solid 1px $primary;
+        }
+        .work {
+            padding-top: 20px;
+        }
+    }
+}
