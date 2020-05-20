@@ -33,5 +33,16 @@
                 height: auto;
             }
         }
+        .burger {
+            text-align: right;
+            display: inline-block;
+            @include md-screen {
+                display: none;
+            }
+            img {
+                width: 30px;
+                height: auto;
+            }
+        }
     }
 }
