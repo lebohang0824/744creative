@@ -60,6 +60,10 @@ $('#contact-us').validate({
             if (data == true) {
                 $('#sending').css('display', 'none');
                 alert('Your message has been sent!');
+
+                form[0].value = null;
+                form[1].value = null;
+                form[2].value = null;
             }
         })
     }
