@@ -29,6 +29,7 @@
             @include grid(1fr 1fr, auto, 5px);
         }
         .contact-details {
+            margin-bottom: 50px;
             h2 {
                 color: #333;
                 margin-left: 0px;
@@ -78,7 +79,7 @@
                 box-sizing: border-box;
                 background-color: #FFF;
                 @include lg-screen {
-                    width: 75%;
+                    width: 100%;
                     padding: 50px;
                     position: absolute;
                 }
@@ -116,7 +117,7 @@
                 }
                 .form-socials {
                     left: 40%;
-                    bottom: -50px;
+                    bottom: -35px;
                     position: absolute;   
                     a {
                         width: 30px;

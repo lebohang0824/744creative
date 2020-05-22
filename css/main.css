@@ -239,6 +239,9 @@ a {
     grid-template-columns: 1fr 1fr;
   }
 }
+.contact-us .info .contact-details {
+  margin-bottom: 50px;
+}
 .contact-us .info .contact-details h2 {
   color: #333;
   margin-left: 0px;
@@ -302,7 +305,7 @@ a {
 }
 @media screen and (min-width: 992px) {
   .contact-us .info .form form {
-    width: 75%;
+    width: 100%;
     padding: 50px;
     position: absolute;
   }
@@ -342,7 +345,7 @@ a {
 }
 .contact-us .info .form form .form-socials {
   left: 40%;
-  bottom: -50px;
+  bottom: -35px;
   position: absolute;
 }
 .contact-us .info .form form .form-socials a {
@@ -406,6 +409,46 @@ a {
 .navbar-container .navbar ul li a {
   color: #333;
 }
+.navbar-container .navbar .mobile {
+  top: 90px;
+  left: 0;
+  padding: 0;
+  z-index: 3;
+  width: 100%;
+  display: block;
+  position: absolute;
+  background-color: #333;
+}
+.navbar-container .navbar .mobile li {
+  width: 100%;
+  text-align: left;
+  line-height: normal;
+  display: block !important;
+  border-bottom: solid 1px #666;
+}
+.navbar-container .navbar .mobile li .active {
+  border: none !important;
+  font-weight: bold;
+}
+.navbar-container .navbar .mobile li a {
+  width: 100%;
+  color: #FFF;
+  padding: 10px 40px;
+  display: block;
+}
+.navbar-container .navbar .mobile::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 9%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom-color: #333;
+  border-top: 0;
+  margin-left: -20px;
+  margin-top: -20px;
+}
 .navbar-container .navbar .logo img {
   width: 150px;
   height: auto;
@@ -429,7 +472,7 @@ a {
   left: 0;
   width: 100%;
   min-height: 100vh;
-  padding-bottom: 20px;
+  padding-bottom: 20px !important;
   background-color: rgba(255, 255, 255, 0.5);
 }
 @media screen and (min-width: 992px) {
