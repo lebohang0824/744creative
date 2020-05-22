@@ -129,6 +129,15 @@
                         }
                     }         
                 }
+                #sending {
+                    padding: 10px;
+                    display: none;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    @include font-size(15);
+                    color: transparentize(blue, .1);
+                    background-color: transparentize(blue, .8);
+                }
             }
         }
     }

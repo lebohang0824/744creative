@@ -376,6 +376,16 @@ a {
   width: 15px;
   height: 100%;
 }
+.contact-us .info .form form #sending {
+  padding: 10px;
+  display: none;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 15;
+  font-size: 0.9375rem;
+  color: rgba(0, 0, 255, 0.9);
+  background-color: rgba(0, 0, 255, 0.2);
+}
 
 .footer {
   width: 90%;

@@ -51,12 +51,14 @@ $(document).ready(function(){
 
 $('#contact-us').validate({
     submitHandler: function (form) {
+        $('#sending').css('display', 'block');
         $.post('email.php', {
             names: form[0].value,
             email: form[1].value,
             messages: form[2].value,
         }).then(function(data){
             if (data == true) {
+                $('#sending').css('display', 'none');
                 alert('Your message has been sent!');
             }
         })
