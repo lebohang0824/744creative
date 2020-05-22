@@ -60,11 +60,11 @@
                             </ul>
                         </div>
                         <div class="form">
-                            <form>
+                            <form method="post" id="contact-us" action="">
                                 <h4>Leave a Message</h4>
-                                <input type="text" placeholder="Your Name" />
-                                <input type="text" placeholder="Your Email" />
-                                <textarea rows="4" placeholder="Message"></textarea>
+                                <input type="text" placeholder="Your Name" name="names" minlength="2" required />
+                                <input type="email" placeholder="Your Email"  name="email" required />
+                                <textarea rows="4" placeholder="Message" name="messages" minlength="5" required></textarea>
                                 <button>Send</button>
 
                                 <div class="form-socials">
@@ -99,6 +99,7 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/venobox.min.js"></script>
 		<script src="js/wow.min.js"></script>
+		<script src="js/jquery.validate.js"></script>
 		<script src="js/main.js"></script>
 		<script>
             

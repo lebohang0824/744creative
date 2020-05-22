@@ -48,3 +48,17 @@ $(document).ready(function(){
         ]
     });
 });
+
+$('#contact-us').validate({
+    submitHandler: function (form) {
+        $.post('email.php', {
+            names: form[0].value,
+            email: form[1].value,
+            messages: form[2].value,
+        }).then(function(data){
+            if (data == true) {
+                alert('Your message has been sent!');
+            }
+        })
+    }
+});

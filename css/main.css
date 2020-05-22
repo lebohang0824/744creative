@@ -32,6 +32,12 @@ a {
   text-decoration: none;
 }
 
+.error {
+  color: red;
+  font-size: 15;
+  font-size: 0.9375rem;
+}
+
 .hero {
   padding-top: 30%;
 }

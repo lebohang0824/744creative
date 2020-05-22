@@ -34,3 +34,8 @@ a {
     padding: 0;
     text-decoration: none;
 }
+
+.error {
+    color: red;
+    @include font-size(15);
+}
