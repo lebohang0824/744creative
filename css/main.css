@@ -329,6 +329,9 @@ a {
     margin-right: 20px;
   }
 }
+.contact-us .info .contact-details ul li .img-file {
+  width: 25px;
+}
 .contact-us .info .contact-details ul li span {
   position: absolute;
 }
